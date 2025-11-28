@@ -75,7 +75,7 @@ Tribot/
 cd app/tribot_app_v2
 flutter pub get
 flutter run
-
+```
 ---
 
 - Note: Configure your ESP8266 IP address inside the app’s configuration file (if applicable).
