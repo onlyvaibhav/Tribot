@@ -14,23 +14,23 @@
 ## 📌 Features
 
 ### 🔹 Robot Modes
-1.  **Wi-Fi Controlled Car**
-    * Control movement and direction using the mobile app over HTTP/Wi-Fi.
-2.  **Obstacle Avoiding Mode**
-    * Uses an ultrasonic sensor (HC-SR04) to automatically avoid obstacles.
-3.  **Line Following Mode**
-    * IR sensors detect and follow line paths autonomously.
+1. **Wi‑Fi Controlled Car**
+   - Control movement and direction using the mobile app over HTTP/Wi‑Fi.
+2. **Obstacle Avoiding Mode**
+   - Uses an ultrasonic sensor (HC‑SR04) to automatically avoid obstacles.
+3. **Line Following Mode**
+   - IR sensors detect and follow line paths autonomously.
 
 ### 🔹 Flutter Mobile App
-* Mode switching (Car / Obstacle Avoid / Line Follow)
-* Real-time directional control
-* ESP8266 IP configuration
-* Clean, modern, and responsive UI
+- Mode switching (Car / Obstacle Avoid / Line Follow)
+- Real-time directional control
+- ESP8266 IP configuration
+- Clean, modern, and responsive UI
 
 ### 🔹 Modular Firmware
-* **`tribot.ino`** – Original version.
-* **`tribot_2.0.ino`** – AI-refactored version.
-* **`tribot_3.0.ino`** – Further improved version with manual fixes.
+- `tribot.ino` — Original version
+- `tribot_2.0.ino` — AI-refactored version
+- `tribot_3.0.ino` — Further improved version
 
 ---
 
@@ -40,14 +40,13 @@
 Tribot/
 ├── app/
 │   └── tribot_app_v2/       # Flutter control application
-│
 ├── firmware/
 │   ├── tribot.ino           # Original ESP8266 firmware
 │   ├── tribot_2.0.ino       # AI-assisted refactored version
 │   └── tribot_3.0.ino       # Further improvements
-│
 ├── .gitignore
 └── README.md
+```
 
 ---
 
@@ -56,9 +55,9 @@ Tribot/
 - **ESP8266 (NodeMCU)**
 - **L298N Motor Driver**
 - **DC Motors + Wheels + Chassis**
-- **Ultrasonic Sensor (HC-SR04)**
+- **Ultrasonic Sensor (HC‑SR04)**
 - **IR Line Sensors**
-- **Li-ion Battery Pack or Power Bank**
+- **Li‑ion Battery Pack or Power Bank**
 - **Jumper wires and connectors**
 
 ---
@@ -66,45 +65,44 @@ Tribot/
 ## 📱 Running the Flutter App
 
 ### Prerequisites
-- Flutter SDK installed  
-- Android device / emulator  
-- ESP8266 and phone connected to **same Wi-Fi network**
+- Flutter SDK installed
+- Android device / emulator
+- ESP8266 and phone connected to **same Wi‑Fi network**
 
 ### Commands
-```bash
+```powershell
 cd app/tribot_app_v2
 flutter pub get
 flutter run
-```bash
+```
+
+> Note: Configure your ESP8266 IP address inside the app’s configuration if applicable.
+
 ---
 
-- Note: Configure your ESP8266 IP address inside the app’s configuration file (if applicable).
+## ⚡ Uploading the ESP8266 Firmware
 
-##⚡Uploading the ESP8266 Firmware
+1. Install the Arduino IDE
+2. Install the ESP8266 board package (Arduino Boards Manager or PlatformIO packages).
+3. Open one of the firmware sketches from the `firmware/` directory.
 
-- Install Arduino IDE or PlatformIO
+```text
+Tribot/firmware/
+├── tribot.ino
+├── tribot_2.0.ino
+└── tribot_3.0.ino
+```
 
-- Install ESP8266 board package
+4. Select board: `Tools → Board → ESP8266 → NodeMCU 1.0` (or the matching board in PlatformIO).
+5. Connect the ESP8266 via USB and select the correct COM/serial port.
+6. Click Upload (or run the upload task in PlatformIO).
 
-- Open any firmware version from:
-
-- Tribot/firmware/
-
-
-Select board:
-Tools → Board → ESP8266 → NodeMCU 1.0
-
-Connect ESP8266 via USB
-
-Click Upload
-
+---
 
 ## 📝 License
 
-This project is open-source and available under the MIT License.
-You may modify, distribute, and use it for academic or personal purposes.
+This project is open-source and available under the MIT License. You may modify, distribute, and use it for academic or personal purposes.
 
 ## 👤 Author
 
-Vaibhav (onlyvaibhav)
-GitHub: https://github.com/onlyvaibhav
+Vaibhav (onlyvaibhav) — https://github.com/onlyvaibhav
