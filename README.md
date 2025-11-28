@@ -1,4 +1,4 @@
-# 🛠️ TriBot – A Versatile Three-Mode Robot (ESP8266 + Flutter App)
+# 🛠️ TriBot – A Versatile Three-Mode Robot
 
 ![ESP8266](https://img.shields.io/badge/ESP8266-Compatible-blue)
 ![Flutter](https://img.shields.io/badge/Flutter-App-blue)
@@ -7,48 +7,44 @@
 ![Last Commit](https://img.shields.io/github/last-commit/onlyvaibhav/Tribot)
 ![Repo Size](https://img.shields.io/github/repo-size/onlyvaibhav/Tribot)
 
-TriBot is a multi-mode robotic system built using the **ESP8266** microcontroller and a custom **Flutter mobile application**.  
-The project demonstrates IoT-based control, autonomous navigation, and clean firmware + app architecture.
+**TriBot** is a multi-mode robotic system built using the **ESP8266** microcontroller and a custom **Flutter mobile application**. The project demonstrates IoT-based control, autonomous navigation, and a clean firmware + app architecture.
 
 ---
 
 ## 📌 Features
 
-### 🔹 **Robot Modes**
-- **Wi-Fi Controlled Car**  
-  Control movement and direction using the mobile app over HTTP/Wi-Fi.
+### 🔹 Robot Modes
+1.  **Wi-Fi Controlled Car**
+    * Control movement and direction using the mobile app over HTTP/Wi-Fi.
+2.  **Obstacle Avoiding Mode**
+    * Uses an ultrasonic sensor (HC-SR04) to automatically avoid obstacles.
+3.  **Line Following Mode**
+    * IR sensors detect and follow line paths autonomously.
 
-- **Obstacle Avoiding Mode**  
-  Uses an ultrasonic sensor (HC-SR04) to automatically avoid obstacles.
+### 🔹 Flutter Mobile App
+* Mode switching (Car / Obstacle Avoid / Line Follow)
+* Real-time directional control
+* ESP8266 IP configuration
+* Clean, modern, and responsive UI
 
-- **Line Following Mode**  
-  IR sensors detect and follow line paths autonomously.
-
-### 🔹 **Flutter Mobile App**
-- Mode switching (Car / Obstacle Avoid / Line Follow)  
-- Real-time directional control  
-- ESP8266 IP configuration  
-- Clean, modern, and responsive UI  
-
-### 🔹 **Modular Firmware**
-- Clean Arduino-based firmware  
-- Multiple versions included:  
-  - `tribot.ino` – Original version  
-  - `tribot_2.0.ino` – AI-refactored version  
-  - `tribot_3.0.ino` – Further improved version  
+### 🔹 Modular Firmware
+* **`tribot.ino`** – Original version.
+* **`tribot_2.0.ino`** – AI-refactored version.
+* **`tribot_3.0.ino`** – Further improved version with manual fixes.
 
 ---
 
 ## 📂 Project Structure
 
+```text
 Tribot/
 ├── app/
-│ └── tribot_app_v2/ # Flutter control application
+│   └── tribot_app_v2/       # Flutter control application
 │
 ├── firmware/
-│ ├── tribot.ino # Original ESP8266 firmware by me
-│ ├── tribot_2.0.ino # AI-assisted refactored version
-│ └── tribot_3.0.ino # Further improvements with manual fixes
+│   ├── tribot.ino           # Original ESP8266 firmware
+│   ├── tribot_2.0.ino       # AI-assisted refactored version
+│   └── tribot_3.0.ino       # Further improvements
 │
 ├── .gitignore
 └── README.md
@@ -80,17 +76,19 @@ cd app/tribot_app_v2
 flutter pub get
 flutter run
 
-Configure your ESP8266 IP address inside the app’s configuration file (if applicable).
+---
 
-Uploading the ESP8266 Firmware
+- Note: Configure your ESP8266 IP address inside the app’s configuration file (if applicable).
 
-Install Arduino IDE or PlatformIO
+##⚡Uploading the ESP8266 Firmware
 
-Install ESP8266 board package
+- Install Arduino IDE or PlatformIO
 
-Open any firmware version from:
+- Install ESP8266 board package
 
-Tribot/firmware/
+- Open any firmware version from:
+
+- Tribot/firmware/
 
 
 Select board:
@@ -100,29 +98,13 @@ Connect ESP8266 via USB
 
 Click Upload
 
-📸 Screenshots (Optional Section You Can Add Later)
 
-You may include:
-
-App UI screenshots
-
-Robot photos
-
-Circuit diagrams
-
-Add them under:
-
-Tribot/docs/images/
-
-
-Then reference them in this README.
-
-📝 License
+## 📝 License
 
 This project is open-source and available under the MIT License.
 You may modify, distribute, and use it for academic or personal purposes.
 
-👤 Author
+## 👤 Author
 
 Vaibhav (onlyvaibhav)
 GitHub: https://github.com/onlyvaibhav
