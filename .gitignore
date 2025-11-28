@@ -1,0 +1,31 @@
+# Flutter & Dart
+app/**/.dart_tool/
+app/**/.idea/
+app/**/.vscode/
+app/**/build/
+app/**/.flutter-plugins
+app/**/.flutter-plugins-dependencies
+app/**/pubspec.lock
+
+# Android build files
+app/**/android/.gradle/
+app/**/android/app/build/
+
+# iOS build files
+app/**/ios/Pods/
+app/**/ios/Flutter/Flutter.framework
+app/**/ios/Flutter/Flutter.podspec
+app/**/ios/Runner.xcworkspace/
+
+# Arduino files
+firmware/*.bin
+firmware/*.hex
+firmware/*.elf
+firmware/.pio/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
