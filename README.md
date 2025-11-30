@@ -106,3 +106,7 @@ This project is open-source and available under the MIT License. You may modify,
 ## 👤 Author
 
 Vaibhav (onlyvaibhav) — https://github.com/onlyvaibhav
+
+## Contributor
+
+Ansh - https://github.com/anshs0354-ui
